@@ -45,16 +45,11 @@ if __name__ == "__main__":
             "Name": "Ryan Pereda",
             "Date": "October 25th, 2025",
             "Question": "Question"
-        },
-        {
-            "Name": "Jane Smith",
-            "Date": "2023-02-22",
-            "Question": "Sample Question 2"
         }
     ]
 
     for i, form_data in enumerate(form_data_list):
-        output_path = f"filled_form_{i+1}.pdf"
+        output_path = f"filled_form.pdf"
         fill_pdf_form('pdf test.pdf', output_path, form_data)
         print(f"Created {output_path}")
 
